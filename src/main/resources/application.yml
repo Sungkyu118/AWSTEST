@@ -1,0 +1,13 @@
+spring:
+  h2:
+    console:
+      enabled: true
+      
+#local 환경
+---
+spring:
+  jpa:
+    show-sql: true
+  config:
+    activate:
+      on-profile: local
