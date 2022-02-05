@@ -33,5 +33,5 @@ deploy:
     acl: private
     wait-until-deployed: true
     on:
-    #  repo: Sungkyu118/AWSTEST #Github 주소
+      repo: Sungkyu118/AWSTEST #Github 주소
       branch: master
