@@ -23,6 +23,11 @@ notifications:
     recipients:
       - kskcjswo@naver.com
 
+before_deploy:
+  - zip -r AWSTEST *
+  - mkdir -p deploy
+  - mv AWSTEST.zip deploy/AWSTEST.zip
+
 deploy:
   - provider: s3
     access_key_id: $AWS_ACCESS_KEY # Travis repo settings에 설정된 값
